@@ -14,8 +14,9 @@ export const Button = styled.div<Props>`
 
   margin-bottom: 8px;
 
-  background-color: ${(props) =>
-    props.isHome ? "var(--primary)" : "var(--primary)"};
+  background-color: var(--primary);
+  
+  /* ${(props) => (props.isHome ? "var(--primary)" : "var(--primary)")}; */
 
   position: relative;
   cursor: pointer;
@@ -73,7 +74,8 @@ export const Button = styled.div<Props>`
   &.activer,
   &:hover {
     border-radius: 16px;
-    background-color: ${(props) =>
-      props.isHome ? "var(--discord)" : "var(--discord)"};
+    background-color: var(--discord);
+    
+    /* ${(props) => (props.isHome ? "var(--discord)" : "var(--discord)")}; */
   }
 `;

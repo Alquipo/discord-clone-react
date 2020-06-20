@@ -15,14 +15,14 @@ export const Button = styled.div<Props>`
   margin-bottom: 8px;
 
   background-color: ${(props) =>
-    props.isHome ? "var(--rocketseat)" : "var(--primary)"};
+    props.isHome ? "var(--primary)" : "var(--primary)"};
 
   position: relative;
   cursor: pointer;
 
   > img {
-    width: 24px;
-    height: 24px;
+    width: 34px;
+    height: 34px;
   }
 
   &::before {
@@ -74,6 +74,6 @@ export const Button = styled.div<Props>`
   &:hover {
     border-radius: 16px;
     background-color: ${(props) =>
-      props.isHome ? "var(--rocketseat)" : "var(--discord)"};
+      props.isHome ? "var(--discord)" : "var(--discord)"};
   }
 `;

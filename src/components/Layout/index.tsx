@@ -1,15 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import {Grid} from './styles'
+import { Grid } from "./styles";
+import Serverlist from "../ServeList";
+
 //criação padrao de componentes no react
 
-const Layout: React.FC =() =>{
-    return(
-        <Grid>
+const Layout: React.FC = () => {
+  return (
+    <Grid>
+      <Serverlist />
+    </Grid>
+  );
+};
 
-            
-        </Grid>
-    )
-}
-
-export default Layout
+export default Layout;

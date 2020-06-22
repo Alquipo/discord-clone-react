@@ -31,7 +31,9 @@
 
 ## 🚀 Sobre o Projeto
 
-Este é um projeto que consiste em criar um clone do site do Discord que foi concebido a partir de uma aula on-line. O projeto foi desenvolvido no ReactJS junto com o TypeScript e outras ferramentas.
+Este é um projeto que consiste em criar um clone do aplicativo Web do Discord que foi concebido a partir de uma aula on-line. O projeto foi desenvolvido no ReactJS junto com o TypeScript e outras ferramentas.
+
+Efetuei diversas modificações para ficar o mais parecido com o App em 2020
 
 ## 🎨 Layout
 

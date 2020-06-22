@@ -10,13 +10,12 @@ export const Button = styled.div<Props>`
 
   width: 48px;
   height: 48px;
-  border-radius: 50%;
-
-  margin-bottom: 8px;
-
-  background-color: var(--primary);
+  border-radius: ${(props) => (props.isHome ? "16px" : "50%")};;
   
-  /* ${(props) => (props.isHome ? "var(--primary)" : "var(--primary)")}; */
+  margin-bottom: 8px;
+ 
+  background-color: ${(props) =>
+    props.isHome ? "var(--discord)" : "var(--primary)"};
 
   position: relative;
   cursor: pointer;
@@ -65,8 +64,6 @@ export const Button = styled.div<Props>`
         content: '${(props) => props.mentions && props.mentions}';
         display: ${(props) =>
           props.mentions && props.mentions > 0 ? "inline" : "none"}
-
-
   }
 
   transition: border-radius 0.2s, background-color 0.2s;
@@ -76,6 +73,7 @@ export const Button = styled.div<Props>`
     border-radius: 16px;
     background-color: var(--discord);
     
-    /* ${(props) => (props.isHome ? "var(--discord)" : "var(--discord)")}; */
+    /* background-color: ${(props) =>
+      props.isHome ? "var(--discord)" : "var(--discord)"}; */
   }
 `;

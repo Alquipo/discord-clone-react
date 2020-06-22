@@ -26,7 +26,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Role = styled.span`
+export const Role = styled.div`
   margin-top: 20px;
 
   text-transform: uppercase;
@@ -80,15 +80,58 @@ export const User = styled.div`
 `;
 
 export const Avatar = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-shrink: 0;
-
   width: 32px;
   height: 32px;
-
   border-radius: 50%;
-  background-color: var(--primary);
-
+  background-color: #43b581;
+  position: relative;
+  img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+  }
   &.bot {
     background-color: var(--mention-detail);
+    &::after {
+      background-color: green;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      bottom: -4px;
+      right: -4px;
+      border-radius: 12px;
+      border: 3px solid var(--quaternary);
+      content: "";
+    }
+  }
+  &.online {
+    &::after {
+      background-color: green;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      bottom: -4px;
+      right: -4px;
+      border-radius: 12px;
+      border: 3px solid var(--quaternary);
+      content: "";
+    }
+  }
+  &.offline {
+    &::after {
+      background-color: red;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      bottom: -4px;
+      right: -4px;
+      border-radius: 12px;
+      border: 3px solid var(--quaternary);
+      content: "";
+    }
   }
 `;

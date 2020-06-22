@@ -5,12 +5,31 @@ import { Container, Role, User, Avatar } from "./styles";
 interface UserProps {
   nickname: string;
   isBot?: boolean;
+  isOnline?: boolean;
+  isOffline?: boolean;
 }
 
-const UserRow: React.FC<UserProps> = ({ nickname, isBot }) => {
+const UserRow: React.FC<UserProps> = ({
+  nickname,
+  isBot,
+  isOnline,
+  isOffline,
+}) => {
   return (
     <User>
-      <Avatar className={isBot ? "bot" : ""} />
+      <Avatar
+        className={
+          isBot
+            ? "bot"
+            : "" || isOnline
+            ? "online"
+            : "" || isOffline
+            ? "offline"
+            : ""
+        }
+      >
+        <img src={require("../../assets/discord.svg")} alt="Thumbnail" />
+      </Avatar>
 
       <strong>{nickname}</strong>
 
@@ -24,25 +43,25 @@ const UserList: React.FC = () => {
   return (
     <Container>
       <Role>Moderadores - 3</Role>
-      <UserRow nickname="Ash ketchum" />
-      <UserRow nickname="Brock" />
-      <UserRow nickname="Misty Williams" />
+      <UserRow isOnline nickname="Ash ketchum" />
+      <UserRow isOnline nickname="Brock" />
+      <UserRow isOnline nickname="Misty Williams" />
 
       <Role>Online - 20</Role>
       <UserRow nickname="Pokebola" isBot />
-      <UserRow nickname="Pickachu" />
-      <UserRow nickname="Charmander" />
-      <UserRow nickname="Bulbasauro" />
-      <UserRow nickname="Squirtle " />
-      <UserRow nickname="Butterfly " />
-      <UserRow nickname="Ratata" />
-      <UserRow nickname="Muk" />
-      <UserRow nickname="Ekans" />
-      <UserRow nickname="Mew" />
-      <UserRow nickname="Mewtwo" />
-      <UserRow nickname="Cyndaquil" />
-      <UserRow nickname="Totodile" />
-      <UserRow nickname="Chicorita" />
+      <UserRow isOnline nickname="Pickachu" />
+      <UserRow isOnline nickname="Charmander" />
+      <UserRow isOnline nickname="Bulbasauro" />
+      <UserRow isOnline nickname="Squirtle " />
+      <UserRow isOnline nickname="Butterfly " />
+      <UserRow isOnline nickname="Ratata" />
+      <UserRow isOnline nickname="Muk" />
+      <UserRow isOnline nickname="Ekans" />
+      <UserRow isOffline nickname="Mew" />
+      <UserRow isOffline nickname="Mewtwo" />
+      <UserRow isOffline nickname="Cyndaquil" />
+      <UserRow isOffline nickname="Totodile" />
+      <UserRow isOffline nickname="Chicorita" />
     </Container>
   );
 };

@@ -19,21 +19,80 @@ const ChannelData: React.FC = () => {
   return (
     <Container>
       <Messages ref={messagesRef}>
-        {Array.from(Array(15).keys()).map((n) => (
+        {/* {Array.from(Array(15).keys()).map((n) => (
           <ChannelMessage
             key={n}
             author="FULANO"
             date="22/06/20"
             content="njfdsfhsaid"
           />
-        ))}
+        ))} */}
 
         <ChannelMessage
-          author="pikachu"
+          author="Pikachu"
+          date="22/06/20"
+          content="Pika Pika pikachu"
+        />
+
+        <ChannelMessage
+          author="Charmander"
+          date="22/06/20"
+          content="Cha Cha Chamander"
+        />
+
+        <ChannelMessage
+          author="Bulbasauro"
+          date="22/06/20"
+          content="Bulbasaur Bulbasaur"
+        />
+
+        <ChannelMessage
+          author="Squirtle"
+          date="22/06/20"
+          content="Squirtle Squirtle"
+        />
+
+        <ChannelMessage
+          author="Butterfly"
+          date="22/06/20"
+          content="Butterflyyyyyyyyy"
+        />
+
+        <ChannelMessage
+          author="Ekans"
+          date="22/06/20"
+          content="Ekanssssssssssss"
+        />
+
+        <ChannelMessage
+          author="Pikachu"
+          date="22/06/20"
+          content="Pika Pika pikachu"
+        />
+
+        <ChannelMessage
+          author="Charmander"
+          date="22/06/20"
+          content="Cha Cha Chamander"
+        />
+
+        <ChannelMessage
+          author="Ekans"
+          date="22/06/20"
+          content="Ekanssssssssssss"
+        />
+
+        <ChannelMessage
+          author="Squirtle"
+          date="22/06/20"
+          content="Squirtle Squirtle"
+        />
+        <ChannelMessage
+          author="Pokebola"
           date="22/06/2020"
           content={
             <>
-              <Mention>@Alquipo Neto</Mention>, e ai brow
+              <Mention>@everyone</Mention> Vou capturar todos vocês
             </>
           }
           hasMention

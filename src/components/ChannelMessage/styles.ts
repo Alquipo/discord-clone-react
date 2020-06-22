@@ -19,17 +19,18 @@ export const Container = styled.div`
   & + div {
     margin-top: 13px;
   }
+  &:hover {
+    background-color: var(--quinary);
+  }
 `;
 
 export const Avatar = styled.div`
-  width: 40px;
-  height: 40px;
-
-  background-color: var(--secondary);
-  border-radius: 50%;
-
-  &.bot {
-    background-color: var(--mention-detail);
+  img {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    background-color: #43b581;
+    border-radius: 50%;
   }
 `;
 
@@ -80,10 +81,14 @@ export const Content = styled.div`
 `;
 
 export const Mention = styled.span`
+  background-color: rgba(114, 137, 218, 0.1);
+  border-radius: 3px;
+  padding: 0 2px 1px 1px;
   color: var(--link);
   cursor: pointer;
 
   &:hover {
-    text-decoration: underline;
+    color: var(--white);
+    background-color: var(--discord);
   }
 `;

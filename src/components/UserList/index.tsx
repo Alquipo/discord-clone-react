@@ -49,7 +49,7 @@ const UserList: React.FC = () => {
 
       <Role>Online - 20</Role>
       <UserRow nickname="Pokebola" isBot />
-      <UserRow isOnline nickname="Pickachu" />
+      <UserRow isOnline nickname="Pikachu" />
       <UserRow isOnline nickname="Charmander" />
       <UserRow isOnline nickname="Bulbasauro" />
       <UserRow isOnline nickname="Squirtle " />

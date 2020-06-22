@@ -20,7 +20,9 @@ const ChannelMessage: React.FC<Props> = ({
 }) => {
   return (
     <Container className={hasMention ? "mention" : ""}>
-      <Avatar className={isBot ? "bot" : ""} />
+      <Avatar className={isBot ? "bot" : ""}>
+        <img src={require("../../assets/discord.svg")} alt="User Thumbnail" />
+      </Avatar>
 
       <Message>
         <Header>

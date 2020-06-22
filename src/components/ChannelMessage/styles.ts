@@ -32,6 +32,11 @@ export const Avatar = styled.div`
     background-color: #43b581;
     border-radius: 50%;
   }
+  
+  }
+  &.bot img {
+    background-color: var(--mention-detail);
+  }
 `;
 
 export const Message = styled.div`

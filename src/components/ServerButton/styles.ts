@@ -10,12 +10,12 @@ export const Button = styled.div<Props>`
 
   width: 48px;
   height: 48px;
-  border-radius: ${(props) => (props.isHome ? "16px" : "50%")};;
+  border-radius: ${(props) => (props.isPokemon ? "16px" : "50%")};;
   
   margin-bottom: 8px;
  
   background-color: ${(props) =>
-    props.isHome ? "var(--discord)" : "var(--primary)"};
+    props.isPokemon ? "var(--notification)" : "var(--primary)"};
 
   position: relative;
   cursor: pointer;
@@ -40,6 +40,8 @@ export const Button = styled.div<Props>`
     /* pseudo elemento precisa ter o content mesmo vazio */
     content: "";
     display: ${(props) => (props.hasNotifications ? "inline" : "none")};
+
+    
   }
 
   &::after {
@@ -68,12 +70,35 @@ export const Button = styled.div<Props>`
 
   transition: border-radius 0.2s, background-color 0.2s;
 
-  &.activer,
+  &.active,
   &:hover {
     border-radius: 16px;
-    background-color: var(--discord);
-    
-    /* background-color: ${(props) =>
-      props.isHome ? "var(--discord)" : "var(--discord)"}; */
+      
+    background-color: ${(props) =>
+      props.isPokemon
+        ? "var(--notification)"
+        : "#43B581" && props.isHome
+        ? "var(--discord)"
+        : "#43B581"};
   }
+
+  &:hover::before{
+ 
+    height: 20px;
+    border-radius: 12px;
+    top: calc(50% - 10px);
+  }
+
+  &.active::before{
+    height: 40px;
+    border-radius: 12px;
+    top: calc(50% - 20px);
+  }
+
+  &.active,
+  &:hover svg {
+    stroke: var(--white);
+  }
+
+}
 `;

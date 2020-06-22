@@ -10,21 +10,14 @@ const ServeList: React.FC = () => {
 
       <Separator />
 
-      <ServerButton />
+      <ServerButton selected isPokemon hasNotifications mentions={3} />
       <ServerButton hasNotifications />
-      <ServerButton mentions={3} />
-      <ServerButton />
-      <ServerButton />
-      <ServerButton />
-      <ServerButton hasNotifications />
-      <ServerButton />
-      <ServerButton />
-      <ServerButton mentions={50} />
-      <ServerButton />
-      <ServerButton />
-      <ServerButton />
-      <ServerButton />
-      <ServerButton />
+      <ServerButton add />
+      <ServerButton explore />
+
+      <Separator />
+
+      <ServerButton download />
     </Container>
   );
 };

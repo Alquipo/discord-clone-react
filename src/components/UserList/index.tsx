@@ -23,24 +23,26 @@ const UserRow: React.FC<UserProps> = ({ nickname, isBot }) => {
 const UserList: React.FC = () => {
   return (
     <Container>
-      <Role>Disponivel - 1</Role>
-      <UserRow nickname="Alquipo Neto" />
+      <Role>Moderadores - 3</Role>
+      <UserRow nickname="Ash ketchum" />
+      <UserRow nickname="Brock" />
+      <UserRow nickname="Misty Williams" />
 
-      <Role>Offline - 20</Role>
-      <UserRow nickname="Lucas Limas" isBot />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
-      <UserRow nickname="Teste" />
+      <Role>Online - 20</Role>
+      <UserRow nickname="Pokebola" isBot />
+      <UserRow nickname="Pickachu" />
+      <UserRow nickname="Charmander" />
+      <UserRow nickname="Bulbasauro" />
+      <UserRow nickname="Squirtle " />
+      <UserRow nickname="Butterfly " />
+      <UserRow nickname="Ratata" />
+      <UserRow nickname="Muk" />
+      <UserRow nickname="Ekans" />
+      <UserRow nickname="Mew" />
+      <UserRow nickname="Mewtwo" />
+      <UserRow nickname="Cyndaquil" />
+      <UserRow nickname="Totodile" />
+      <UserRow nickname="Chicorita" />
     </Container>
   );
 };

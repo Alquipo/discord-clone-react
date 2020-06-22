@@ -5,6 +5,7 @@ import Serverlist from "../ServeList";
 import ServerName from "../ServerName";
 import ChannelInfo from "../ChannelInfo";
 import ChannelList from "../ChannelList";
+import UserInfo from "../UserInfo";
 
 //criação padrao de componentes no react
 
@@ -15,6 +16,7 @@ const Layout: React.FC = () => {
       <ServerName />
       <ChannelInfo />
       <ChannelList />
+      <UserInfo />
     </Grid>
   );
 };

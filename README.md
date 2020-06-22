@@ -51,7 +51,7 @@ Efetuei diversas modificações para ficar o mais parecido com o App em 2020
 ## 🔨 Tecnologias:
 
 - [TypeScript][typescript]
-- [React Native][reactjs]
+- [React JS][reactjs]
 
 ## 🚀 Como rodar este projeto
 
@@ -94,7 +94,7 @@ Este projeto esta sobe a licença MIT. Veja a [LICENÇA][license] para saber mai
 
 Feito com ❤️ por Alquipo Neto 👋🏽 [Entre em contato!](https://www.linkedin.com/in/alquiponeto/)
 
-[reactjs]: https://reactnative.dev/
+[reactjs]: https://reactjs.org/
 [nodejs]: https://nodejs.org/en/
 [rs]: https://rocketseat.com.br
 [license]: https://opensource.org/licenses/MIT

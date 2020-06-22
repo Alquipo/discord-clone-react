@@ -24,14 +24,10 @@
 
 <p align="center">
 
-  <a href="https://reactjs.org/">
+  <a target="_blank" href="https://reactjs.org/">
     <img alt="ReactNative" src="https://img.shields.io/static/v1?color=blue&label=React&message=JS&?style=plastic&logo=React">
   </a>
 </p>
-
-<h2 align="center">
-  Desafio 04: Conceitos do React Native
-</h2>
 
 ## 🚀 Sobre o Projeto
 
@@ -46,9 +42,10 @@ Este é um projeto que consiste em criar um clone do site do Discord que foi con
 
 <div align="center">
 
-<button><a href="https://alquipo-discord-clone.netlify.app/"><img alt="Demo" src=".github/netlify.svg" target="_blank"></img></a></button>
+<button><a target="_blank" href="https://alquipo-discord-clone.netlify.app/"><img alt="Demo" src=".github/netlify.svg" ></img></a></button>
 
 </div>
+
 ## 🔨 Tecnologias:
 
 - [TypeScript][typescript]

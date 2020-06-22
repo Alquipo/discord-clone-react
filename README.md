@@ -16,7 +16,9 @@
 
 <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=blue">
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9d272332-9a77-4519-80d0-b9b1f9951e3b/deploy-status)](https://app.netlify.com/sites/alquipo-discord-clone/deploys)
+<a href="https://app.netlify.com/sites/alquipo-discord-clone/deploys">
+    <img alt="Netlify" src="https://api.netlify.com/api/v1/badges/9d272332-9a77-4519-80d0-b9b1f9951e3b/deploy-status">
+</a>
 
 </p>
 
@@ -31,24 +33,9 @@
   Desafio 04: Conceitos do React Native
 </h2>
 
-## 🚀 Sobre o desafio
+## 🚀 Sobre o Projeto
 
-Quarto desafio foi desenvolver um aplicativo Mobile onde mostra os dados dos repositórios da `API` desenvolvida no [Desafio 2][desafio2]. Foi adicionado no aplicativo Mobile a listagem dos repositórios e a função da de curtir os repositórios.
-
-## 🎉 Melhorias
-
-    - Convertido todo o Projeto para TypeScript
-    - Refeito a interface do projeto para ficar um pouco melhor (não sou Designer)😊;
-    - Adicionado a visualização da url, techs e curtidas;
-    - Adicionado um botão para Criar Repositórios;
-    - Adicionado um botão para Remover Repositórios;
-    - Adicionado um botão para Ir para o Repositórios;
-    - Efetuado Validação no texto para quando não tem curtidas;
-    - Adicionado ícone no APP
-    - Adicionado Splash Screen no APP
-    - Alterado nome do App
-    - Adicionado URL dinâmica no botão GitHub
-    - Melhorado o TouchableOpacity do botão GitHub
+Este é um projeto que consiste em criar um clone do site do Discord que foi concebido a partir de uma aula on-line. O projeto foi desenvolvido no ReactJS junto com o TypeScript e outras ferramentas.
 
 ## 🎨 Layout
 
@@ -57,60 +44,40 @@ Quarto desafio foi desenvolver um aplicativo Mobile onde mostra os dados dos rep
   <img  alt="Original" title="Discord" src=".github/discord.gif"  />
 </p>
 
-<p align="center">
+<div align="center">
 
 <button><a href="https://alquipo-discord-clone.netlify.app/"><img alt="Demo" src=".github/netlify.svg" target="_blank"></img></a></button>
 
-</p>
+</div>
 ## 🔨 Tecnologias:
 
 - [TypeScript][typescript]
 - [React Native][reactjs]
-- [Axios][axios]
 
 ## 🚀 Como rodar este projeto
 
 Para clonar e executar este aplicativo, você precisará de [Git](https://git-scm.com), [NodeJs][nodejs] Instalado em seu computador.
 
-O projeto e divido em duas partes:
-
-1. Back End [Repositório][desafio2]
-2. Mobile
-
-💡 E preciso efetuar o clone e seguir os passos de instalação do [Repositório da API][desafio2]
-
-💡 O Mobile precisa que o Back End esteja sendo executado para funcionar.
-
 ### 🌀 Clonando o repositório
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/Alquipo/GoStack12-desafio-04
+$ git clone https://github.com/Alquipo/React-Discord-Clone
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd GoStack12-desafio-04
+$ cd React-Discord-Clone
 ```
 
-### 📱 Rodando a aplicação Mobile
+### 🧭 Rodando a aplicação web
 
 ```bash
 # Instale as dependências
 $ yarn
 
-# Instale as dependências IOS (somente se for usar IOS)
-$ cd ios
-$ pod install
+# Execute a Aplicação
+$ yarn start
 
-# Execute a Aplicação Android (somente se for usar Android)
-$ yarn android
-
-# Execute a Aplicação IOS (somente se for usar IOS)
-$ yarn ios
-
-# Execute o teste da Aplicação
-$ yarn test
-
-# O servidor inciará na porta:3333 - acesse http://localhost:3333
+# O servidor inciará na porta:3000 - acesse http://localhost:3000
 ```
 
 ## 🤔 Como contribuir para o projeto
@@ -130,7 +97,6 @@ Feito com ❤️ por Alquipo Neto 👋🏽 [Entre em contato!](https://www.linke
 
 [reactjs]: https://reactnative.dev/
 [nodejs]: https://nodejs.org/en/
-[axios]: https://www.npmjs.com/package/axios
 [rs]: https://rocketseat.com.br
 [license]: https://opensource.org/licenses/MIT
 [desafio2]: https://github.com/Alquipo/GoStack12-desafio-02
